@@ -19,7 +19,6 @@ void createArray(int a[], int n) {
 }
 
 void Merge(int a[], int left, int right, int mid) {
-
     int i = left, j = mid + 1, idx =0;
     int* temp = new int[right - left + 1];
 
@@ -38,12 +37,12 @@ void Merge(int a[], int left, int right, int mid) {
         }
     }
 
-    // Thay doi mang cu thanh moi tu vi tri left
+    // Thay doi tren mang a bat dau tu vi tri left
     for(int i = 0; i < idx; i++) {
         a[left + i] = temp[i];
     }
 
-    delete temp;
+    delete[] temp;
 }
 
 void MergeSort(int a[], int left, int right) {

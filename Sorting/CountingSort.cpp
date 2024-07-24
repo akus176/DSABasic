@@ -13,7 +13,7 @@ void printArray(int a[], int n) {
 void createArray(int a[], int n) {
     srand(time(0));
 
-    for(int i =0; i<n;i++) {
+    for(int i =0; i<n; i++) {
         a[i] = rand() % 31 + 1;
     }
 }

@@ -40,6 +40,8 @@ void QuickSort(int a[], int left, int right) {
     if(left >= right) return;
 
     int pos = partition(a, left, right);
+
+    // Phan tu pivot khong nam trong lan phan hoach tiep theo nen khong lay tai vi tri pos
     QuickSort(a, left, pos - 1);
     QuickSort(a, pos + 1, right);
 }
